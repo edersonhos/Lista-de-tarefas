@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <div id="task-container">
+        <h1>Lista de Tarefas</h1>
+        <div id="task-status">
+            <div id="task-list">
+                <ul>
+                    <li>
+                        <div class="task-interactive-checkbox">
+                            <input type="checkbox" class="task-checkbox">
+                        </div>
+                        <div class="task-itens">
+                            <h3 class="task-name">Ir ao mercado</h5>
+                            <p>Comprar 10 paes frescos de manha antes de ir trabalhar</p>
+                        </div>
+                        <div class="task-interactive-delete">
+                            <button class="delete-task-button">Excluir</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="task-interactive-checkbox">
+                            <input type="checkbox" class="task-checkbox">
+                        </div>
+                        <div class="task-itens">
+                            <h3 class="task-name">Abastecer o carro depois do mercado</h3>
+                            <p>Encher o tanque do carro</p>
+                        </div>
+                        <div class="task-interactive-delete">
+                            <button class="delete-task-button">Excluir</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="task-count">
+                <p id="task-count-title">Total de itens:</p>
+                <p id="task-count-number">2</p>
+            </div>
+        </div>
+        <div id="task-actions">
+          <input type="text" id="task-input" placeholder="Adicionar item à lista">
+            <button id="add-task-button">Adicionar item</button>
+            <ul id="task-list"></ul>
+        </div>
+    </div>
+</body>
+</html>
+<script src="script.js"></script>
