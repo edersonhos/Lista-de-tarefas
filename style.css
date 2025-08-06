@@ -14,7 +14,6 @@ body {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
     display: flex;
@@ -26,7 +25,6 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    border-bottom: 1px solid #000000;
 }
 
 #task-status {
@@ -97,6 +95,44 @@ h1 {
     cursor: pointer;
 }
 
+.delete-task-button:hover {
+    background-color: #c90101;
+}
+
 .task-checkbox {
     cursor: pointer;
+}
+
+#task-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-actions-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.task-actions-input  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#add-task-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#add-task-button:hover {
+    background-color: #3c9140;
 }
