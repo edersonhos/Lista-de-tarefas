@@ -34,7 +34,7 @@ h1 {
     align-items: center;
 }
 
-#task-list{
+#task-list {
     width: 100%;
     margin-bottom: 10px;
     display: flex;
@@ -52,55 +52,38 @@ h1 {
     margin-right: 5px;
 }
 
-#task-list ul {
+#task-list-ul  {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    height: 100%;
+}
+
+#task-list-ul li {
     list-style-type: none;
     padding: 0;
     margin: 0;
     width: 100%;
 }
 
-#task-list ul li {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border-bottom: 1px dotted #535353;
+#task-list-ul li:hover {
+    background-color: #f0f0f0;
 }
 
-#task-list ul li:last-child {
+#task-list-ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#task-list-ul li:last-child {
     border-bottom: none;
 }
 
-#task-list .task-itens {
+#task-list-ul li {
     display: flex;
     flex-direction: column;
     width: 100%;
-}
-
-.task-interactive-checkbox {
-    padding-right: 20px;
-}
-
-.task-itens h3 {
-    padding-bottom: 5px;
-}
-
-.delete-task-button {
-    background-color: #ff4d4d;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.delete-task-button:hover {
-    background-color: #c90101;
-}
-
-.task-checkbox {
-    cursor: pointer;
 }
 
 #task-actions {
@@ -135,4 +118,23 @@ h1 {
 }
 #add-task-button:hover {
     background-color: #3c9140;
+}
+
+#clear-list-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.item-action-button-delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
 }
