@@ -5,3 +5,4 @@ Criada utilizando
 HTML
 CSS 
 JavaScript
+LocalStorage
